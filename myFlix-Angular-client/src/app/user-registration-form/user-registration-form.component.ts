@@ -9,11 +9,22 @@ import { UserRegistrationService } from '../fetch-api-data.service';
 
 // This import is used to display notifications back to the user
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-user-registration-form',
-  imports: [],
+  imports: [
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule
+  ],
   templateUrl: './user-registration-form.component.html',
   styleUrl: './user-registration-form.component.css'
 })
